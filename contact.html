@@ -1,48 +1,80 @@
-<main class="bg-orange-100 py-16">
-  <section class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="output.css" />
+  <body class="flex flex-col pt-5 bg-[url(bread.jpg)] bg-center bg-cover">
+    <nav class="flex justify-center bg-amber-700 p-5 text-white h-25 ">
+        <ul class="flex gap-8">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="menu.html"><li>Menu</li></a>
+          <a href="contact.html"><li>Contactos</li></a>
+        </ul>
+    </nav>
+    <main class="bg-amber-200 py-16 mt-25">
+      <section class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <!-- Informações -->
+        <div class="bg-white p-8 rounded-3xl shadow-lg">
+          <h2 class="text-3xl font-extrabold text-amber-700 mb-6">
+            Fale Connosco
+          </h2>
 
-    <!-- Informações -->
-    <div class="bg-white p-8 rounded-3xl shadow-lg">
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Tem alguma dúvida, sugestão ou deseja fazer uma encomenda? Estamos
+            disponíveis para o atender com todo o prazer.
+          </p>
 
-      <h2 class="text-3xl font-extrabold text-amber-700 mb-6">
-        Fale Connosco
-      </h2>
+          <ul class="space-y-4 text-gray-700">
+            <li>
+              <span class="font-semibold text-amber-700">📍 Morada:</span> Av.
+              Eduardo Mondlane
+            </li>
+            <li>
+              <span class="font-semibold text-amber-700">📞 Telefone:</span>
+              +258 84 000 0000
+            </li>
+            <li>
+              <span class="font-semibold text-amber-700">📧 Email:</span>
+              docesabor@gmail.com
+            </li>
+          </ul>
+        </div>
 
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        Tem alguma dúvida, sugestão ou deseja fazer uma encomenda?
-        Estamos disponíveis para o atender com todo o prazer.
-      </p>
+        <!-- Formulário -->
+        <form class="bg-white p-8 rounded-3xl shadow-lg space-y-4">
+          <h3 class="text-2xl font-bold text-amber-700 mb-4">
+            Envie uma Mensagem
+          </h3>
 
-      <ul class="space-y-4 text-gray-700">
-        <li><span class="font-semibold text-amber-700">📍 Morada:</span> Av. Eduardo Mondlane</li>
-        <li><span class="font-semibold text-amber-700">📞 Telefone:</span> +258 84 000 0000</li>
-        <li><span class="font-semibold text-amber-700">📧 Email:</span> docesabor@gmail.com</li>
-      </ul>
+          <input
+            type="text"
+            placeholder="Nome"
+            class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600"
+          />
 
-    </div>
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600"
+          />
 
-    <!-- Formulário -->
-    <form class="bg-white p-8 rounded-3xl shadow-lg space-y-4">
+          <textarea
+            rows="4"
+            placeholder="Mensagem"
+            class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600"
+          ></textarea>
 
-      <h3 class="text-2xl font-bold text-amber-700 mb-4">
-        Envie uma Mensagem
-      </h3>
-
-      <input type="text" placeholder="Nome"
-        class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600">
-
-      <input type="email" placeholder="Email"
-        class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600">
-
-      <textarea rows="4" placeholder="Mensagem"
-        class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-600"></textarea>
-
-      <button
-        class="w-full bg-amber-600 text-white font-bold py-3 rounded-xl hover:bg-amber-700 transition">
-        Enviar
-      </button>
-
-    </form>
-
-  </section>
-</main>
+          <button
+            class="w-full bg-amber-900 text-white font-bold py-3 rounded-xl hover:bg-amber-700 transition"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
