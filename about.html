@@ -6,7 +6,8 @@
   <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-amber-50 text-gray-800">
+<body class="min-h-screen text-gray-800">
+
 
   <!-- Header -->
   <header class="bg-amber-600 text-white p-6">
@@ -14,28 +15,38 @@
   </header>
 
   <!-- Conteúdo -->
-  <main class="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-8 items-center">
+ <main
+  class="min-h-screen bg-[url('./assets/images/pastelaria.jpg')] bg-cover bg-center bg-no-repeat">
 
-    <img src="./assets/images/pastelaria.jpg"
-         alt="Interior da pastelaria"
-         class="rounded-2xl shadow-lg">
+  <!-- Overlay -->
+  <div class="bg-amber-50/90 min-h-screen">
 
-    <div>
-      <h2 class="text-2xl font-bold mb-4">Quem Somos</h2>
+    <div class="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-8 items-center">
 
-      <p class="mb-4">
-        A Pastelaria Doce Sabor nasceu da paixão pela confeitaria artesanal.
-        Produzimos diariamente pães, bolos e doces com ingredientes frescos
-        e receitas tradicionais.
-      </p>
+      <img src="./assets/images/pastelaria.jpg"
+           alt="Interior da pastelaria"
+           class="rounded-2xl shadow-lg">
 
-      <p>
-        O nosso compromisso é oferecer qualidade, sabor e um atendimento
-        acolhedor para toda a família.
-      </p>
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Quem Somos</h2>
+
+        <p class="mb-4">
+          A Pastelaria Doce Sabor nasceu da paixão pela confeitaria artesanal.
+          Produzimos diariamente pães, bolos e doces com ingredientes frescos
+          e receitas tradicionais.
+        </p>
+
+        <p>
+          O nosso compromisso é oferecer qualidade, sabor e um atendimento
+          acolhedor para toda a família.
+        </p>
+      </div>
+
     </div>
 
-  </main>
+  </div>
+</main>
+
 
   <!-- Footer -->
   <footer class="bg-amber-600 text-white text-center p-4 mt-10">
